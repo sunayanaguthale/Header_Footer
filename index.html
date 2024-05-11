@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>HEADER AND FOOTER</title>
+</head>
+<body>
+             <!--HEADER-->
+    <section>
+        <div id="sidenav">
+            <ul class="nav-elements">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">COURSES</a></li>
+                <li><a href="#">OFFER</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <img src="menu.png" alt="Menu Logo " id="menuBtn"/>
+        <div class="content">
+            <h1>HEADER SIDE NAVBAR <br> AND <br>FOOTER SOCIAL MEDIA</h1>
+        </div>
+
+        <!--FOOTER-->
+        <div class="social">
+            <ul>
+                <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            </ul>
+            <p>Copyright 2021 Sparrow Tech Youtube Channel</p>
+        </div>
+    </section>
+</body>
+</html>
+<script>
+    var menuBtn = document.getElementById("menuBtn");
+    var sidenav = document.getElementById("sidenav");
+
+    sidenav.style.right = "-250px";
+
+    menuBtn.onclick = function(){
+        if(sidenav.style.right == "-250px"){
+            menuBtn.style.transform = "rotate(-90deg)";
+            sidenav.style.right ="0";
+        }
+        else{
+            menuBtn.style.transform ="rotate(0deg)";
+            sidenav.style.right ="-250px"
+        }
+    };
+</script>
